@@ -1,8 +1,8 @@
 # QPlayer-Typecho-Plugin
-一款简洁小巧的Typecho底部悬浮音乐播放器插件. 支持网易云音乐解析。效果展示: https://32mb.space
+一款简洁小巧的Typecho底部悬浮音乐播放器插件. 支持网易云音乐解析。
 
-##界面
-![QPlayer.PNG][1]
+# 更新
+2020-03-06 MoLeft修复网易云解析接口
 
 ##使用方法
 Download ZIP, 解压，将 QPlayer-Typecho-Plugin-master 重命名为 QPlayer ，之后上传到你博客中的 /usr/plugins 目录，在后台启用即可
@@ -27,9 +27,5 @@ Download ZIP, 解压，将 QPlayer-Typecho-Plugin-master 重命名为 QPlayer �
 
 
 
-
- [1]: https://32mb.space/usr/uploads/2016/08/858331127.png
- [2]: https://32mb.space/usr/uploads/2016/09/585694551.png
  [3]: https://32mb.space/archives/7.html
  [4]: http://www.ihewro.com/archives/354/
-
