@@ -1,11 +1,11 @@
 <?php
 /**
- * 简洁美观非常Qの悬浮音乐播放器
+ * 简洁美观非常Qの悬浮音乐播放器，MoLeft修复网易云解析接口
  * 
  * @package QPlayer
- * @author Jrohy
- * @version 1.3.4.2
- * @link https://32mb.space
+ * @author Jrohy,MoLeft
+ * @version 1.3.5.2
+ * @link http://www.moleft.cn
  */
 class QPlayer_Plugin implements Typecho_Plugin_Interface
 {
@@ -70,16 +70,16 @@ window.onload = bgChange;
 
         $musicList = new Typecho_Widget_Helper_Form_Element_Textarea('musicList', NULL, 
 '{
-    title:"叫做你的那个人",
-    artist:"Jessica",
-    mp3:"http://p2.music.126.net/N5MyzQh73z5KRqhmQe_WPg==/5675679022587512.mp3",
-    cover:"http://p3.music.126.net/DkVjogF-Ga8_FX0Kf7p7Pw==/2328765627693725.jpg?param=106x106",
+    title:"感谢你曾来过",
+    artist:"周思涵",
+    mp3:"http://music.163.com/song/media/outer/url?id=460578140.mp3",
+    cover:"http://p2.music.126.net/iL36G-e6rm2zwCUmlL4pOw==/109951162859100521.jpg?param=106x106",
 },
 {
-    title:"如果",
-    artist:"金泰妍",
-    mp3:"http://p2.music.126.net/_W3MHbGYREJYhooqUCFw0w==/7936274929553895.mp3",
-    cover:"http://p4.music.126.net/3-Xl4UGcpgl2I3YbbC3QFg==/2933497024962579.jpg?param=106x106",
+    title:"绿色",
+    artist:"陈雪凝",
+    mp3:"http://music.163.com/song/media/outer/url?id=1345848098.mp3",
+    cover:"http://p1.music.126.net/R4ZP3AJ9xV0vvw8LX7AbMA==/109951163860425334.jpg?param=106x106",
 },
 ',_t('歌曲列表'), _t('格式: {title:"xxx", artist:"xxx", cover:"http:xxxx", mp3:"http:xxxx"} ，每个歌曲之间用英文,隔开。请保证歌曲列表里至少有一首歌！<br><h4 style="margin-bottom:5px;margin-top:12px;">添加网易云音乐(需主机支持curl扩展)</h4><div style="background-color:#467b96;padding:5px 10px;max-width:109px;border-radius: 2px;"><a href="'.Helper::options()->pluginUrl.'/QPlayer/IDExplain.php" target="_blank" style="font-size:14px;color:#fff;outline:none;text-decoration:none;">网易云音乐id解析</a>
         	</div><p style="font-size: .92857em;color: #999; margin-top: 4px; margin-bottom:15px;">请自行去网易云音乐网页版获取音乐id(具体在每个音乐项目的网址最后会有个id)。<b style="color: #888;">将解析出的音乐链接复制到上面歌曲列表里(注意检查与现有歌曲是否用英文,隔开)。有版权的音乐无法解析!</b></p>'));
